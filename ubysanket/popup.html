@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anket Başlat</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+      background-color: #f9f9f9;
+      color: #333;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-width: 300px;  /* Minimum genişlik */
+      width: 300px;      /* Sabit genişlik */
+      min-height: 230px; /* Minimum yükseklik */
+    }
+
+    .container {
+      width: 100%;
+      padding: 15px;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      font-size: 24px;
+      color: #444;
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 15px;
+      display: block;
+    }
+
+    select {
+      padding: 12px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 100%;
+      margin-bottom: 20px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      background-color: white;
+    }
+
+    button {
+      padding: 12px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      color: white;
+      background-color: #4CAF50;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    select:focus, button:focus {
+      outline: none;
+      border-color: #4CAF50;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Anket Başlat</h1>
+    <label for="response">Cevabınızı Seçin:</label>
+    <select id="response">
+      <option value="">Bir seçenek seçin...</option>
+      <option value="1">Kesinlikle Katılmıyorum</option>
+      <option value="2">Katılmıyorum</option>
+      <option value="3">Ne Katılıyorum Ne Katılmıyorum</option>
+      <option value="4">Katılıyorum</option>
+      <option value="5">Kesinlikle Katılıyorum</option>
+    </select>
+    <button id="startButton">Başlat</button>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
